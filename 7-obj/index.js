@@ -14,16 +14,16 @@ const data = require('./data.json')
 //     "hobbies":["Cricket","Guitar","comedy"]
 // }
 
-dataStr = JSON.stringify(data) // converting data to string before changing it to obj to access the properties
+// dataStr = JSON.stringify(data) // converting data to string before changing it to obj to access the properties
 
-dataObj = JSON.parse(dataStr)
-
-
-
-let [age,academicDetails] = [dataObj.personalDetails.age,JSON.stringify(dataObj.academicDetails)];
+// dataObj = JSON.parse(dataStr)
 
 
-let hobby = dataObj.hobbies.filter((data)=>{
+
+let [age,academicDetails] = [data.personalDetails.age,JSON.stringify(data.academicDetails)];
+
+
+let hobby = data.hobbies.filter((data)=>{
     if(data.slice(0,1)=="C"){
         return data.toString();
     }
