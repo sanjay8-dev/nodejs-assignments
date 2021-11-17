@@ -1,0 +1,13 @@
+{
+    "personalDetails":{
+        "name": "John",
+        "age" : 31,
+        "city": "New York"
+    },
+    "academicDetails":{
+        "ssc":90,
+        "hsc":85,
+        "graduation":80
+    },
+    "hobbies":["Cricket","Guitar","comedy"]
+}
