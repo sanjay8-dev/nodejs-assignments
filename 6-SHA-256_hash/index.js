@@ -8,7 +8,7 @@ const text = fs.readFileSync("./msg.csv", "UTF-8")
 
 const checkString =(val) =>{
 
- if(val.length) return val
+ if(val.length == 17) return val
  else {
      console.log("The message has to be 17 char");
      process.exit();
