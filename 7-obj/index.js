@@ -20,16 +20,17 @@ const data = require('./data.json')
 
 
 
-let [age,academicDetails] = [data.personalDetails.age,JSON.stringify(data.academicDetails)];
+let [age,academicDetails] = [data.personalDetails.age,data.academicDetails.graduation];
 
+let hobby = [];
 
-let hobby = data.hobbies.filter((data)=>{
-    if(data.slice(0,1)=="C"){
-        return data.toString();
+ data.hobbies.forEach((data)=>{
+    if(data.slice(0,1).toUpperCase()=="C"){
+        hobby.push(data);
     }
 })
 
-
-console.log(`John's age: ${age}, academicDetails:${academicDetails}, Hobbies starting with letter C: ${hobby}` ) 
+console.log(hobby)
+console.log(`John's age: ${age}, academicDetails for graduation :${academicDetails} marks, Hobbies starting with letter C: ${hobby}` ) 
 
 
